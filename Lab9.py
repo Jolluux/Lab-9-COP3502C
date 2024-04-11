@@ -9,7 +9,15 @@ def encoder(string):
 
 #code decoder for lucas - Alex
 def decoder(string):
-    pass
+    decoded_message = ''
+    for i in range(len(string)):
+        number = int(string[i])
+        number -= 3
+        if number < 0:
+            number += 10
+        number = str(number)
+        decoded_message += number
+    return decoded_message
 
 
 if __name__ == '__main__':
