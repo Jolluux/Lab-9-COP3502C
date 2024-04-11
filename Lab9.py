@@ -7,6 +7,11 @@ def encoder(string):
         encoded_message += number
     return encoded_message
 
+#code decoder for lucas - Alex
+def decoder(string):
+    pass
+
+
 if __name__ == '__main__':
     string = ''
     while True:
